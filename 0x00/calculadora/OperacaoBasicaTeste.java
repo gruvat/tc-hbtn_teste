@@ -1,3 +1,4 @@
+package calculadora;
 public class OperacaoBasicaTeste {
 
     static boolean testar_soma() {

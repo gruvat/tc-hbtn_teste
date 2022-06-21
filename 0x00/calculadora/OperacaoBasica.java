@@ -1,3 +1,4 @@
+package calculadora;
 public class OperacaoBasica {
 
     static double somar(double a, double b) {
