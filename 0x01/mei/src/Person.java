@@ -1,9 +1,7 @@
-import java.time.LocalDate;
 import java.util.Date;
-import java.time.Period;
 import java.util.concurrent.TimeUnit;
 
-public class Pessoa {
+public class Person {
 
     private String name;
     private String surname;
@@ -14,7 +12,7 @@ public class Pessoa {
 
     private float salary;
 
-    public Pessoa(String name, String surname, Date birthDate, boolean anotherCompanyOwner, boolean pensioner, boolean publicServer) {
+    public Person(String name, String surname, Date birthDate, boolean anotherCompanyOwner, boolean pensioner, boolean publicServer) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;

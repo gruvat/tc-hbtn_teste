@@ -7,12 +7,12 @@ import java.text.SimpleDateFormat;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PersonTest {
-    private Pessoa pessoa;
+    private Person person;
 
     @BeforeEach
     void setup() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy");
-         this.pessoa = new Pessoa("Paul",
+         this.person = new Person("Paul",
                 "McCartney",
                 sdf.parse("30-01-2000"),
                 true,
@@ -22,19 +22,19 @@ public class PersonTest {
 
     @Test
     void show_full_name() {
-        assertEquals(pessoa.fullName(), "Paul McCartney");
+        assertEquals(person.fullName(), "Paul McCartney");
     }
 
     @Test
     void test_calculateYearlySalary() {
-        this.pessoa.setSalary(1200);
-        assertEquals(14400, this.pessoa.calculateYearlySalary());
+        this.person.setSalary(1200);
+        assertEquals(14400, this.person.calculateYearlySalary());
     }
 
     @Test
     void person_is_MEI() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy");
-        Pessoa p = new Pessoa("Paul",
+        Person p = new Person("Paul",
                 "McCartney",
                 sdf.parse("30-01-2000"),
                 false,
