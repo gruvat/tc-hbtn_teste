@@ -1,3 +1,5 @@
+package pessoa;
+
 public class Pessoa {
 
     static boolean emailValid(String email) {
