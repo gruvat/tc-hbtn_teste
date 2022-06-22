@@ -45,4 +45,9 @@ public class PersonTest {
         assertTrue(p.isMEI());
     }
 
+    @Test
+    void person_is_not_MEI() {
+        this.person.setSalary(1200);
+        assertFalse(this.person.isMEI());
+    }
 }
